@@ -1,0 +1,20 @@
+{
+  "name": "equation-calc",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "15.0.3",
+    "react": "19.0.0-rc-66855b96-20241106",
+    "react-dom": "19.0.0-rc-66855b96-20241106",
+    "styled-components": "^6.1.13"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^2.1.4"
+  }
+}
