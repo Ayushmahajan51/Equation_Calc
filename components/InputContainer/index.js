@@ -25,8 +25,10 @@ const InputContainer = (props) => {
           type="number"
           value={initialInput}
           onChange={(e) => {
-            setInitialInput(Number(e.target.value));
-            setOutputs({ 1: Number(e.target.value) });
+            if(Number(e.target.value) !== initialInput){
+              setInitialInput(Number(e.target.value));
+              setOutputs({ 1: Number(e.target.value) });
+            }
           }}
         />
         <VerticalLine />

@@ -29,7 +29,7 @@ export default function Chain() {
   const finalOutputRef = useRef(null); // Ref for final Output
 
   const handleOutputChange = (fnId, output) => {
-    setOutputs((prevOutputs) => ({ ...prevOutputs, [fnId]: output }));
+    setOutputs((prevOutputs) => ({ ...prevOutputs, [fnId]: parseFloat(output) || 0 }));
   };
 
   // Function for generating a curved line
